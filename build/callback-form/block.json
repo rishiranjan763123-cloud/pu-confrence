@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "pu/callback-form",
+  "title": "Callback Form (live)",
+  "category": "pu-conferences",
+  "icon": "phone",
+  "description": "Callback request form. Submissions are saved under Enquiries and emailed to the site admin.",
+  "attributes": {
+    "kicker": {
+      "type": "string",
+      "default": "Talk to us"
+    },
+    "title": {
+      "type": "string",
+      "default": "Request a callback"
+    },
+    "sub": {
+      "type": "string",
+      "default": "Leave your details and our conference team will call you back."
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "html": false
+  },
+  "editorScript": "file:./index.js",
+  "viewScript": "file:./view.js"
+}

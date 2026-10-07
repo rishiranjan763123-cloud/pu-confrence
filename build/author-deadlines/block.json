@@ -1,0 +1,66 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "pu/author-deadlines",
+  "title": "Author Deadlines",
+  "category": "pu-conferences",
+  "icon": "clock",
+  "description": "Key dates for authors, with a submit button.",
+  "attributes": {
+    "kicker": {
+      "type": "string",
+      "default": "For authors"
+    },
+    "title": {
+      "type": "string",
+      "default": "Key dates for authors"
+    },
+    "sub": {
+      "type": "string",
+      "default": "Plan your submission around these deadlines."
+    },
+    "items": {
+      "type": "array",
+      "default": [
+        {
+          "label": "Abstract submission",
+          "date": "20 Nov 2026",
+          "note": "Send a summary of about 300 words."
+        },
+        {
+          "label": "Full paper submission",
+          "date": "20 Dec 2026",
+          "note": "Use the conference template."
+        },
+        {
+          "label": "Notification of acceptance",
+          "date": "15 Jan 2027",
+          "note": "Reviewers send comments with the decision."
+        },
+        {
+          "label": "Camera-ready paper",
+          "date": "31 Jan 2027",
+          "note": "Final files for the proceedings."
+        },
+        {
+          "label": "Early registration closes",
+          "date": "05 Feb 2027",
+          "note": "Discounted rate ends."
+        }
+      ]
+    },
+    "btnText": {
+      "type": "string",
+      "default": "Submit a paper"
+    },
+    "btnUrl": {
+      "type": "string",
+      "default": "#callback"
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "html": false
+  },
+  "editorScript": "file:./index.js"
+}

@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "pu/steps-strip",
+	"title": "Steps Strip",
+	"category": "pu-conferences",
+	"icon": "editor-ol",
+	"description": "A short numbered strip that explains how to take part.",
+	"attributes": {
+		"items": {
+			"type": "array",
+			"default": [
+				{ "number": "01", "title": "Attend and exchange", "sub": "Hear ideas from across your field." },
+				{ "number": "02", "title": "Present your work", "sub": "Explore themes and submission routes." },
+				{ "number": "03", "title": "Follow the research", "sub": "Read reports and published proceedings." }
+			]
+		}
+	},
+	"supports": { "anchor": true, "html": false },
+	"editorScript": "file:./index.js"
+}

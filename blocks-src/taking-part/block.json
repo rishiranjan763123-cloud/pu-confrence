@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "pu/taking-part",
+	"title": "Taking Part (live picker)",
+	"category": "pu-conferences",
+	"icon": "groups",
+	"description": "Ways to take part, plus a picker that shows details of an announced edition.",
+	"attributes": {
+		"kicker": { "type": "string", "default": "Get involved" },
+		"title": { "type": "string", "default": "Taking part" },
+		"sub": { "type": "string", "default": "Choose how you want to be involved, then pick an edition." },
+		"items": {
+			"type": "array",
+			"default": [
+				{ "title": "Attend", "text": "Join keynotes, panels and workshops, in person or online." },
+				{ "title": "Present", "text": "Submit a paper, poster or demo to the programme committee." },
+				{ "title": "Sponsor", "text": "Support the conference and meet the research community." }
+			]
+		},
+		"pickerLabel": { "type": "string", "default": "Select an announced edition" }
+	},
+	"supports": { "anchor": true, "html": false },
+	"editorScript": "file:./index.js",
+	"viewScript": "file:./view.js"
+}

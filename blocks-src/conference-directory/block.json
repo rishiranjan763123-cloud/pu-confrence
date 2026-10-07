@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "pu/conference-directory",
+	"title": "Conference Directory (live)",
+	"category": "pu-conferences",
+	"icon": "search",
+	"description": "Searchable, filterable list of every conference.",
+	"attributes": {
+		"kicker": { "type": "string", "default": "Directory" },
+		"title": { "type": "string", "default": "Find a conference" },
+		"sub": { "type": "string", "default": "Search by title or city, or filter by topic and format." }
+	},
+	"supports": { "anchor": true, "html": false },
+	"editorScript": "file:./index.js",
+	"viewScript": "file:./view.js"
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "pu/conf-hero",
+  "title": "Conference Hero",
+  "category": "pu-conferences",
+  "icon": "cover-image",
+  "description": "Page hero with title, text, two buttons and an optional background image.",
+  "attributes": {
+    "kicker": {
+      "type": "string",
+      "default": "Parul University conferences"
+    },
+    "title": {
+      "type": "string",
+      "default": "Where research meets the people who can use it"
+    },
+    "text": {
+      "type": "string",
+      "default": "Find a conference, submit your work and meet researchers from across engineering, health, management and the sciences."
+    },
+    "primaryText": {
+      "type": "string",
+      "default": "Browse conferences"
+    },
+    "primaryUrl": {
+      "type": "string",
+      "default": "#directory"
+    },
+    "secondaryText": {
+      "type": "string",
+      "default": "Request a callback"
+    },
+    "secondaryUrl": {
+      "type": "string",
+      "default": "#callback"
+    },
+    "image": {
+      "type": "object",
+      "default": {
+        "id": 0,
+        "url": "",
+        "alt": ""
+      }
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "html": false
+  },
+  "editorScript": "file:./index.js"
+}

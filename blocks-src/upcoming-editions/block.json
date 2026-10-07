@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "pu/upcoming-editions",
+	"title": "Upcoming Editions (live)",
+	"category": "pu-conferences",
+	"icon": "calendar-alt",
+	"description": "Cards for conferences marked as upcoming. Data comes from the Conference post type.",
+	"attributes": {
+		"kicker": { "type": "string", "default": "Forthcoming" },
+		"title": { "type": "string", "default": "Upcoming conferences" },
+		"sub": { "type": "string", "default": "Dates, venues and registration for the next editions." },
+		"count": { "type": "number", "default": 3 },
+		"viewAllText": { "type": "string", "default": "See all conferences" },
+		"viewAllUrl": { "type": "string", "default": "#directory" }
+	},
+	"supports": { "anchor": true, "html": false },
+	"editorScript": "file:./index.js",
+	"viewScript": "file:./view.js"
+}

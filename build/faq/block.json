@@ -1,0 +1,53 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "pu/faq",
+  "title": "FAQ",
+  "category": "pu-conferences",
+  "icon": "editor-help",
+  "description": "Accordion of questions and answers. Works without JavaScript.",
+  "attributes": {
+    "kicker": {
+      "type": "string",
+      "default": "Questions"
+    },
+    "title": {
+      "type": "string",
+      "default": "Frequently asked questions"
+    },
+    "sub": {
+      "type": "string",
+      "default": ""
+    },
+    "items": {
+      "type": "array",
+      "default": [
+        {
+          "q": "Who can submit a paper?",
+          "a": "Faculty, researchers, industry professionals and students can submit original work."
+        },
+        {
+          "q": "Can I attend online?",
+          "a": "Hybrid and online editions offer live streaming and recorded sessions. Check the format on each conference card."
+        },
+        {
+          "q": "Are papers published?",
+          "a": "Accepted and presented papers are included in the conference proceedings."
+        },
+        {
+          "q": "How do I register?",
+          "a": "Open the conference page and use its registration link, or request a callback and we will help."
+        },
+        {
+          "q": "Is there a fee waiver for students?",
+          "a": "Reduced rates are listed on each registration page."
+        }
+      ]
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "html": false
+  },
+  "editorScript": "file:./index.js"
+}

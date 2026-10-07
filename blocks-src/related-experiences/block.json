@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "pu/related-experiences",
+	"title": "Related Experiences",
+	"category": "pu-conferences",
+	"icon": "networking",
+	"description": "Related links with a call-out banner underneath.",
+	"attributes": {
+		"kicker": { "type": "string", "default": "Beyond the conference" },
+		"title": { "type": "string", "default": "Related experiences" },
+		"sub": { "type": "string", "default": "More ways to connect with research at Parul University." },
+		"items": {
+			"type": "array",
+			"default": [
+				{ "title": "Workshops", "text": "Hands-on sessions led by invited researchers.", "url": "" },
+				{ "title": "Doctoral colloquium", "text": "Present early work and get feedback from senior academics.", "url": "" },
+				{ "title": "Industry track", "text": "See how research ideas are used in practice.", "url": "" }
+			]
+		},
+		"bannerTitle": { "type": "string", "default": "Planning to attend?" },
+		"bannerText": { "type": "string", "default": "Tell us which conference interests you and we will send the programme." },
+		"bannerBtnText": { "type": "string", "default": "Get in touch" },
+		"bannerBtnUrl": { "type": "string", "default": "#callback" }
+	},
+	"supports": { "anchor": true, "html": false },
+	"editorScript": "file:./index.js"
+}

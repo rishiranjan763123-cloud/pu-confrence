@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "pu/research-cards",
+	"title": "Research Cards",
+	"category": "pu-conferences",
+	"icon": "grid-view",
+	"description": "Cards with an image, a tag, a title and a short text.",
+	"attributes": {
+		"kicker": { "type": "string", "default": "Research" },
+		"title": { "type": "string", "default": "Explore the research" },
+		"sub": { "type": "string", "default": "Reports, themes and calls that shape our conferences." },
+		"items": {
+			"type": "array",
+			"default": [
+				{ "image": { "id": 0, "url": "", "alt": "" }, "tag": "Proceedings", "title": "Conference proceedings", "text": "Browse papers presented at earlier editions.", "url": "" },
+				{ "image": { "id": 0, "url": "", "alt": "" }, "tag": "Themes", "title": "Research themes", "text": "See the topics each conference invites papers on.", "url": "" },
+				{ "image": { "id": 0, "url": "", "alt": "" }, "tag": "Calls", "title": "Calls for papers", "text": "Read the scope, formats and review process.", "url": "" }
+			]
+		}
+	},
+	"supports": { "anchor": true, "html": false },
+	"editorScript": "file:./index.js"
+}

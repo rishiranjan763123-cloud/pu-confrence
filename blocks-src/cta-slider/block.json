@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "pu/cta-slider",
+	"title": "Call-to-action Slider",
+	"category": "pu-conferences",
+	"icon": "images-alt2",
+	"description": "Slides with an image, text and a button. Controlled by assets/js/front.js.",
+	"attributes": {
+		"items": {
+			"type": "array",
+			"default": [
+				{ "image": { "id": 0, "url": "", "alt": "" }, "title": "Present your research", "text": "Submit a paper and get feedback from an international audience.", "btnText": "See key dates", "btnUrl": "#" },
+				{ "image": { "id": 0, "url": "", "alt": "" }, "title": "Meet your community", "text": "Workshops, panels and receptions built for conversation.", "btnText": "Browse conferences", "btnUrl": "#directory" },
+				{ "image": { "id": 0, "url": "", "alt": "" }, "title": "Need help choosing?", "text": "Tell us your field and we will suggest the right edition.", "btnText": "Request a callback", "btnUrl": "#callback" }
+			]
+		}
+	},
+	"supports": { "anchor": true, "html": false },
+	"editorScript": "file:./index.js"
+}
