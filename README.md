@@ -38,8 +38,5 @@ Custom theme with 11 React-based Gutenberg blocks, a `conference` post type, and
 | Conference fields | `inc/fields.php` and `inc/post-types.php` |
 | Callback form saving and email | `inc/enquiry.php` |
 
-If you change a block's markup, old copies on a page show "Block contains unexpected or invalid content". Click **Attempt Block Recovery** or re-add the block.
 
-## Deploy
 
-Commit this folder. Upload it to `wp-content/themes/` on the server together with `build/` (not `node_modules/`), install Secure Custom Fields, save Permalinks, and recreate content or use Tools > Export / Import.
